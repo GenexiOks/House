@@ -1,0 +1,10 @@
+._container {
+    max-width: 1110px;
+    margin: 0 15px;
+}
+
+/* ----HEADER----------------------------------- */
+header {
+    height: 100px;
+    background-color: rgba(225, 237, 230, 1);
+}
