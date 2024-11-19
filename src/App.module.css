@@ -3,6 +3,12 @@
     margin: 0 auto;
 }
 
+@media (max-width) {
+    ._container {
+        max-width: 690px;
+    }
+}
+
 /* ----HEADER----------------------------------- */
 header {
     height: 100px;
@@ -18,9 +24,15 @@ header {
 
 .ul_container {
     display: flex;
-    width: 470px;
+    width: 472px;
     height: 24px;
     gap: 60px;
+}
+
+.ul_container a {
+    color: #2c2d35;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .logo_container {
@@ -32,6 +44,10 @@ header {
     gap: 8px;
 }
 
+.ul_container a {
+    outline: none;
+}
+
 .logo_container p {
     color: rgba(89, 141, 102, 1);
     font-size: 20px;
@@ -40,6 +56,43 @@ header {
     text-decoration-skip-ink: none;
 }
 
+.ul_container a:hover {
+    color: #598d66;
+}
+
+.ul_container a:focus-visible {
+    background: #d4e8d9;
+}
+
+.ul_container a:active {
+    color: #376b44;
+}
+
+/* ------SVG_Button---------- */
+
 .btn_basket {
+    position: relative;
     background-color: rgba(225, 237, 230, 1);
+    width: 24px;
+    height: 24px;
+}
+
+.btn_basket:hover .basket_svg path {
+    stroke: #598d66;
+}
+
+.btn_basket:active .basket_svg path {
+    stroke: #376b44;
+}
+
+.quantity {
+    position: absolute;
+    left: 5.5px;
+    top: 2px;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
