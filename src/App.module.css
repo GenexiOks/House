@@ -15,6 +15,10 @@
     }
 }
 
+._hidden {
+    display: none;
+}
+
 /* ----HEADER----------------------------------- */
 header {
     height: 100px;
@@ -23,9 +27,10 @@ header {
     @media (max-width: 576px) {
         height: 123px;
     }
+
     @media (max-width: 320px) {
         background-color: white;
-        height: 130px;
+        height: 68px;
     }
 }
 
@@ -41,8 +46,9 @@ header {
         align-items: center;
         justify-content: space-evenly;
     }
+
     @media (max-width: 320px) {
-        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -51,6 +57,7 @@ header {
     width: 472px;
     height: 24px;
     gap: 60px;
+
     @media (max-width: 768px) {
         width: 445px;
     }
@@ -58,16 +65,22 @@ header {
     @media (max-width: 576px) {
         width: 510px;
     }
+
     @media (max-width: 320px) {
-        background-color: rgba(225, 237, 230, 1);
-        height: 63px;
+        display: none;
     }
 }
 
-@media (max-width: 320px) {
-    .ul_container li {
-        display: none;
-    }
+.mobil__menu_container {
+    width: 100%;
+    height: 63px;
+    background-color: rgba(225, 237, 230, 1);
+}
+
+.mobil_hidden_menu {
+    background-color: rgba(225, 237, 230, 1);
+    width: 320px;
+    height: 365px;
 }
 
 .ul_container a {
@@ -93,7 +106,7 @@ header {
     gap: 8px;
 
     @media (max-width: 320px) {
-        margin-top: 18px;
+        height: 68px;
     }
 }
 
@@ -143,9 +156,8 @@ hr {
     width: 24px;
     height: 24px;
 }
-
-@media (max-width: 576px) {
-    .btn_basket {
+.btn_basket {
+    @media (max-width: 576px) {
         margin-left: 65px;
     }
 }
@@ -168,4 +180,27 @@ hr {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.mobil_li {
+    @media (max-width: 320px) {
+        display: block;
+    }
+}
+
+.mobil__menu_container {
+    display: none;
+
+    @media (max-width: 320px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.mobil__menu_container button {
+    margin: 0 15px;
+    background-color: rgba(225, 237, 230, 1);
+}
+
+.hidden_menu_contaier {
 }
