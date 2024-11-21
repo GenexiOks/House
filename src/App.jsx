@@ -41,7 +41,6 @@ function App() {
                         </li>
                         <li>
                             <button className={styles.btn_basket}>
-                                <span className={styles.quantity}>1</span>
                                 <svg
                                     className={styles.basket_svg}
                                     width="22"
@@ -71,10 +70,6 @@ function App() {
                                             stroke-width="2"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                            fill="#598D66"
                                         />
                                     </g>
                                     <defs>
@@ -150,7 +145,8 @@ function App() {
                         </svg>
                     </button>
                 </div>
-                <div className={hiddenHandler ? styles.mobil_hidden_menu : styles._hidden}>
+                {/* ------------Mobile UI 320px -----------------------------------------------------*/}
+                <div className={hiddenMenu ? styles.mobil_hidden_menu : styles._hidden}>
                     <button className={styles.mobil__close_btn} onClick={hiddenHandler}>
                         <svg
                             width="30"
