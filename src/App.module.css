@@ -136,6 +136,19 @@ hr {
     color: #376b44;
 }
 
+/* ----------MAIN------------------------------------- */
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.main_content {
+    height: 620px;
+}
+
+/* ----------FOOTER----------------------------------- */
+
 /* ------SVG_Button---------------------------------- */
 
 .btn_basket {
@@ -144,6 +157,7 @@ hr {
     width: 24px;
     height: 24px;
 }
+
 .btn_basket {
     @media (max-width: 576px) {
         margin-left: 65px;
@@ -163,6 +177,10 @@ hr {
 .btn_basket:active .basket_svg path,
 .mobil__basket_btn:active path {
     stroke: #376b44;
+}
+
+.mobil__basket_btn {
+    width: 24px;
 }
 
 /* --------Mobile UI 320px---------------------------- */
@@ -218,7 +236,11 @@ hr {
     background-color: rgba(225, 237, 230, 1);
     width: 320px;
     height: 365px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 320px) {
+        display: flex;
+    }
 }
