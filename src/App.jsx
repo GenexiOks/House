@@ -187,8 +187,20 @@ function App() {
                     </ul>
                 </div>
             </header>
-            <main className={styles.main}>
-                <div className={classNames(styles.main_content, styles._container)}></div>
+            <main className={styles.page}>
+                <div className={classNames(styles.main, styles._container)}>
+                    <img src="/MainBird.png" />
+                    <div className={styles.contant_container}>
+                        <h1>
+                            Реплики картин от <span>Ink. House</span>
+                        </h1>
+                        <p>
+                            Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие
+                            произведения, доступные цены.
+                        </p>
+                        <button>Продукция</button>
+                    </div>
+                </div>
             </main>
             <footer className={styles.footer}>dsd</footer>
         </>
