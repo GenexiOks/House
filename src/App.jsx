@@ -189,8 +189,8 @@ function App() {
             </header>
             <main className={styles.page}>
                 <div className={classNames(styles.main, styles._container)}>
-                    <img src="/MainBird.png" />
-                    <div className={styles.contant_container}>
+                    <img className={styles.main__img} src="/MainBird.png" />
+                    <div className={styles.main__contant}>
                         <h1>
                             Реплики картин от <span>Ink. House</span>
                         </h1>

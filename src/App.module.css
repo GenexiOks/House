@@ -147,34 +147,107 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        height: 380px;
+    }
+    @media (max-width: 576px) {
+        width: 510px;
+        height: 339px;
+    }
+
+    @media (max-width: 320px) {
+        width: 290px;
+        height: 353px;
+    }
 }
 
-.contant_container {
+.main__contant {
     width: 540px;
     height: 331px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        width: 330px;
+        height: 308px;
+    }
+
+    @media (max-width: 576px) {
+        width: 285px;
+        height: 239px;
+    }
+    @media (max-width: 320px) {
+        width: 290px;
+        height: 233px;
+    }
+
+    @media (max-width: px) {
+        width: 290px;
+        height: 233px;
+    }
 }
 
-.contant_container h1 {
+.main__img {
+    @media (max-width: 768px) {
+        width: 330px;
+        height: 380px;
+    }
+    @media (max-width: 576px) {
+        width: 208px;
+        height: 248px;
+    }
+    @media (max-width: 320px) {
+        display: none;
+    }
+}
+
+.main__contant h1 {
     font-size: 60px;
     line-height: 110%;
+    @media (max-width: 768px) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    @media (max-width: 320px) {
+        line-height: 30px;
+        font-size: 30px;
+    }
 }
 
-.contant_container span {
+.main__contant span {
     color: #598d66;
 }
 
-.contant_container p {
+.main__contant p {
     width: 540px;
     height: 54px;
     font-size: 18px;
     color: rgba(134, 146, 139, 1);
     line-height: 27px;
+
+    @media (max-width: 768px) {
+        width: 330px;
+        height: 108px;
+    }
+    @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 24px;
+        width: 248px;
+        height: 96px;
+    }
+    @media (max-width: 320px) {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
-.contant_container button {
+.main__contant button {
     width: 225px;
     height: 65px;
     gap: 6px;
@@ -185,6 +258,24 @@ hr {
     font-size: 20px;
     line-height: 23.48px;
     text-align: center;
+
+    @media (max-width: 768px) {
+        width: 210px;
+        height: 60px;
+        margin-top: 23px;
+    }
+
+    @media (max-width: 576px) {
+        width: 178px;
+        height: 50px;
+        margin-top: 0px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 320px) {
+        width: 154px;
+        height: 50px;
+    }
 }
 /* ----------FOOTER----------------------------------- */
 
