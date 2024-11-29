@@ -343,6 +343,7 @@ hr {
 .catalog__btn_england {
     width: 108px;
 }
+
 .catalog__btn_container > .catalog__btn:hover {
     background-color: #598d66;
     color: white;
