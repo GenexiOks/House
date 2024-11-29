@@ -289,7 +289,7 @@ function App() {
                             Реплики картин <br /> от <span>Ink. House</span>
                         </h1>
                         <p>Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
-                        <button>Продукция</button>
+                        <button className={styles.main__btn}>Продукция</button>
                     </div>
                 </div>
                 <div className={styles.catalog}>
@@ -298,7 +298,7 @@ function App() {
                             <h1 className={styles.catalog__title}>Репродукции</h1>
                             <nav className={styles.catalog__btn_container}>
                                 <button
-                                    onFocus={focus()}
+                                    autoFocus
                                     onClick={function () {
                                         setCountry(france);
                                     }}
@@ -312,7 +312,7 @@ function App() {
                                     }}
                                     className={classNames(styles.catalog__btn, styles.catalog__btn_germany)}
                                 >
-                                    Гурмания
+                                    Гeрмания
                                 </button>
                                 <button
                                     onClick={function () {
