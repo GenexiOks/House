@@ -278,7 +278,7 @@ hr {
     }
 }
 
-.main__btn:active {
+.main__contant .main__btn:active {
     background: #376b44;
     color: white;
 }
@@ -287,11 +287,11 @@ hr {
     border: 1px solid #598d66;
     background: #d4e8d9;
 }
-/* 
-.main__button:hover {
+
+.main__btn:hover {
     background: #598d66;
     color: white;
-} */
+}
 
 /* ----------CATALOG---------------------------------- */
 

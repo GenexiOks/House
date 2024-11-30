@@ -47,15 +47,15 @@
     margin-top: 20px;
 }
 
-.painting__btn:active {
+.painting__container .painting__btn:active {
     background: #376b44;
     color: rgba(244, 246, 245, 1);
 }
 
-/* .painting__btn:hover {
+.painting__btn:hover {
     background: #598d66;
     color: rgba(244, 246, 245, 1);
-} */
+}
 
 .painting__btn:focus-visible {
     border: 1px solid #598d66;

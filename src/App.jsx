@@ -328,7 +328,7 @@ function App() {
                     </div>
                 </div>
             </main>
-            <footer className={styles.footer}>dsd</footer>
+            <footer className={styles.footer}>Подвал</footer>
         </>
     );
 }
