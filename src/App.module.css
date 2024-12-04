@@ -350,7 +350,12 @@ hr {
     background-color: #598d66;
     color: white;
 }
-.catalog__btn_container > .catalog__btn:focus {
+/* .catalog__btn_container > .catalog__btn_france:focus {
+    background-color: #376b44;
+    color: white;
+} */
+
+.tabActive {
     background-color: #376b44;
     color: white;
 }

@@ -146,6 +146,8 @@ function App() {
         hiddenMenu ? setHiddenMenu(false) : setHiddenMenu(true);
     }
 
+    function activeTabHandler(value) {}
+
     return (
         <>
             <header className={styles.header}>
@@ -298,9 +300,10 @@ function App() {
                             <h1 className={styles.catalog__title}>Репродукции</h1>
                             <nav className={styles.catalog__btn_container}>
                                 <button
-                                    autoFocus
+                                    style={{ backgroundColor: "#376b44", color: "white" }}
                                     onClick={function () {
                                         setCountry(france);
+                                        tabActiveHandler;
                                     }}
                                     className={classNames(styles.catalog__btn, styles.catalog__btn_france)}
                                 >
