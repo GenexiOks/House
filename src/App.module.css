@@ -340,11 +340,26 @@ hr {
     width: 108px;
 }
 
+<<<<<<< HEAD
 .btn_container {
     right: 205px;
     display: flex;
     width: 428px;
     justify-content: space-between;
+=======
+.catalog__btn_container > .catalog__btn:hover {
+    background-color: #598d66;
+    color: white;
+}
+/* .catalog__btn_container > .catalog__btn_france:focus {
+    background-color: #376b44;
+    color: white;
+} */
+
+.tabActive {
+    background-color: #376b44;
+    color: white;
+>>>>>>> c93005b4faacc61b5b2f52dad9e87a89cc5dbb7d
 }
 
 /* ----------FOOTER----------------------------------- */

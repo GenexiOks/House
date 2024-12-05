@@ -15,6 +15,8 @@ function App() {
         hiddenMenu ? setHiddenMenu(false) : setHiddenMenu(true);
     }
 
+    function activeTabHandler(value) {}
+
     return (
         <>
             <header className={styles.header}>
