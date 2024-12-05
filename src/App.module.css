@@ -322,13 +322,7 @@ hr {
     line-height: 110%; /* 44px */
 }
 
-.catalog__btn_container {
-    display: flex;
-    width: 428px;
-    justify-content: space-between;
-}
-
-.catalog__btn {
+.btn {
     border-radius: 20px;
     background: #d4e8d9;
     color: rgba(44, 45, 53, 1);
@@ -338,22 +332,21 @@ hr {
     text-align: center;
 }
 
-.catalog__btn_germany {
+.btn_germany {
     width: 135px;
 }
 
-.catalog__btn_england {
+.btn_england {
     width: 108px;
 }
 
-.catalog__btn_container > .catalog__btn:hover {
-    background-color: #598d66;
-    color: white;
+.btn_container {
+    right: 205px;
+    display: flex;
+    width: 428px;
+    justify-content: space-between;
 }
-.catalog__btn_container > .catalog__btn:focus {
-    background-color: #376b44;
-    color: white;
-}
+
 /* ----------FOOTER----------------------------------- */
 
 /* ----------SVG_Button------------------------------- */
