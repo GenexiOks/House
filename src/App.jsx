@@ -5,7 +5,7 @@ import Card from "./components/Card.jsx";
 
 function App() {
     const [hiddenMenu, setHiddenMenu] = useState(false);
-    const [activeTab, setActiveTab] = useState(0);
+    const [activeTab, setActiveTab] = useState("0");
 
     function openTab(e) {
         setActiveTab(e.target.id);
@@ -14,8 +14,6 @@ function App() {
     function hiddenHandler() {
         hiddenMenu ? setHiddenMenu(false) : setHiddenMenu(true);
     }
-
-    function activeTabHandler(value) {}
 
     return (
         <>
@@ -168,13 +166,13 @@ function App() {
                         <div className={classNames(styles.catalog__menu, styles._container)}>
                             <h1 className={styles.catalog__title}>Репродукции</h1>
                             <nav className={styles.btn_container}>
-                                <button id="0" onClick={openTab} className={classNames(styles.btn, styles.btn_france, styles._active)}>
+                                <button id="0" onClick={openTab} className={classNames(styles.btn, { [styles.active]: activeTab === "0" })}>
                                     Франция
                                 </button>
-                                <button id="1" onClick={openTab} className={classNames(styles.btn, styles.btn_germany)}>
+                                <button id="1" onClick={openTab} className={classNames(styles.btn, { [styles.active]: activeTab === "1" }, styles.btn_germany)}>
                                     Гeрмания
                                 </button>
-                                <button id="2" onClick={openTab} className={classNames(styles.btn, styles.btn_england)}>
+                                <button id="2" onClick={openTab} className={classNames(styles.btn, { [styles.active]: activeTab === "2" }, styles.btn_england)}>
                                     Англия
                                 </button>
                             </nav>
