@@ -4,11 +4,21 @@
     background-color: #e1ede6;
     padding: 20px 20px 30px 20px;
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        width: 330px;
+        height: 730px;
+        gap: 30px;
+    }
 }
 
 .paintin__img {
     width: 310px;
     height: 422px;
+    @media (max-width: 768px) {
+        width: 290px;
+        height: 422px;
+    }
 }
 
 .painting__author {
@@ -45,6 +55,11 @@
     font-weight: 500;
     line-height: normal;
     margin-top: 20px;
+
+    @media (max-width: 768px) {
+        width: 290px;
+        height: 65px;
+    }
 }
 
 .painting__container .painting__btn:active {

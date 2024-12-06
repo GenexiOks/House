@@ -207,7 +207,7 @@ hr {
         font-size: 40px;
         line-height: 40px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         font-size: 36px;
         line-height: 36px;
     }
@@ -305,7 +305,7 @@ hr {
     display: flex;
     width: 1110px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .catalog__container {
@@ -314,12 +314,20 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        height: 100%;
+    }
 }
 
 .catalog__title {
     color: #2c2d35;
     font-size: 40px;
     line-height: 110%; /* 44px */
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 }
 
 .btn {
