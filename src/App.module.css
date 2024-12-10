@@ -299,6 +299,9 @@ hr {
     height: 100%;
     width: 100%;
     margin-top: 70px;
+    @media (max-width: 576px) {
+        margin-top: 0;
+    }
 }
 
 .catalog__menu {
@@ -306,6 +309,14 @@ hr {
     width: 1110px;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 87px;
+        gap: 20px;
+    }
 }
 
 .catalog__container {
@@ -313,10 +324,13 @@ hr {
     height: 1564px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     @media (max-width: 768px) {
         height: 100%;
+
+        @media (max-width: 576px) {
+            height: 1709px;
+        }
     }
 }
 
@@ -328,6 +342,9 @@ hr {
     @media (max-width: 768px) {
         font-size: 30px;
     }
+    @media (max-width: 576px) {
+        font-size: 24px;
+    }
 }
 
 .btn {
@@ -338,6 +355,10 @@ hr {
     height: 43px;
     font-size: 20px;
     text-align: center;
+    @media (max-width: 576px) {
+        width: 118px;
+        height: 41px;
+    }
 }
 
 .btn_container {
@@ -348,10 +369,16 @@ hr {
 
 .btn_germany {
     width: 135px;
+    @media (max-width: 576px) {
+        width: 125px;
+    }
 }
 
 .btn_england {
     width: 108px;
+    @media (max-width: 576px) {
+        width: 101px;
+    }
 }
 
 .catalog__btn_container > .catalog__btn:hover {

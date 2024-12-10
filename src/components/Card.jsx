@@ -33,7 +33,7 @@ const countryData = [
         },
         {
             img: "/Card/France/05.png",
-            author: "Луи Детуш",
+            author: "Франсуа Дюпон",
             title_work: "Птичья трапеза",
             about: "Цветная литография (40х60) ",
             cost: "22 500 руб",
