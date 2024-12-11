@@ -183,11 +183,17 @@ function App() {
                 <div className={styles.collection}>
                     <div className={classNames(styles.collection_container, styles._container)}>
                         <div className={styles.collection__title_container}>
-                            <img></img>
-                            <h1></h1>
+                            <img src="./collection/Star.png" alt="star"></img>
+                            <h1>Новая коллекция французских авторов</h1>
                         </div>
-                        <p></p>
-                        <button className={styles.collection__btn}></button>
+                        <div className={styles.collection__text_container}>
+                            <p>
+                                Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных
+                                рациональных ограничений.
+                            </p>
+                            <p>Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</p>
+                        </div>
+                        <button className={styles.collection__btn}>Ознакомиться</button>
                     </div>
                 </div>
             </main>

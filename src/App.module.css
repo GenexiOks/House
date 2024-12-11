@@ -1,6 +1,7 @@
 ._container {
     max-width: 1110px;
     margin: 0 auto;
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
         max-width: 690px;
@@ -401,16 +402,125 @@ hr {
 /* ----------Collection------------------------------- */
 
 .collection {
+    position: relative;
     width: 100%;
     height: 574px;
-    background: url("../public/collection/Rectangle.png");
-    object-fit: cover;
-    object-position: center;
+    background: url(./collection/Rectangle.png);
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background: url(./collection/Rectagle690.png);
+        background-repeat: no-repeat;
+    }
 }
 
 .collection_container {
+    position: relative;
     height: 574px;
+    z-index: 99;
+
+    @media (max-width: 768px) {
+        height: 502px;
+    }
+}
+
+.collection_container img {
+    object-fit: contain;
+    object-position: 50%;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.collection__title_container {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    display: flex;
+    gap: 20px;
+    width: 521px;
+    height: 80px;
+
+    @media (max-width: 768px) {
+        width: 450px;
+        height: 60px;
+    }
+}
+
+.collection__title_container h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 100%;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+.collection__text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 560px;
+    height: 209px;
+    color: white;
+    top: 170px;
+    left: 0;
+    font-size: 17.6px;
+    line-height: 150%;
+    word-spacing: normal;
+
+    @media (max-width: 768px) {
+        width: 680px;
+        font-size: 18px;
+        height: 182px;
+        top: 160px;
+    }
+}
+
+.collection button {
+    position: absolute;
+    height: 65px;
+    background-color: rgba(238, 219, 109, 1);
+    font-size: 20px;
+    left: 0;
+    top: 439px;
+    width: 257px;
+    height: 65px;
+
+    @media (max-width: 768px) {
+        top: 372px;
+        width: 210px;
+        height: 60px;
+    }
+}
+
+.collection button:hover {
+    background: #faeb97;
+}
+
+.collection button:focus-visible {
+    border: 1px solid #a38314;
+    background: #faeb97;
+}
+
+.collection button:active {
+    background: #d9b949;
 }
 
 /* ----------FOOTER----------------------------------- */
