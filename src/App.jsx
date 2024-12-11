@@ -180,6 +180,16 @@ function App() {
                         <Card country={activeTab} />
                     </div>
                 </div>
+                <div className={styles.collection}>
+                    <div className={classNames(styles.collection_container, styles._container)}>
+                        <div className={styles.collection__title_container}>
+                            <img></img>
+                            <h1></h1>
+                        </div>
+                        <p></p>
+                        <button className={styles.collection__btn}></button>
+                    </div>
+                </div>
             </main>
             <footer className={styles.footer}>Подвал</footer>
         </>
