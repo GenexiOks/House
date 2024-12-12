@@ -303,6 +303,7 @@ hr {
     margin-bottom: 70px;
     @media (max-width: 576px) {
         margin-top: 0;
+        margin-bottom: 50px;
     }
 }
 
@@ -413,6 +414,11 @@ hr {
         background: url(/collection/Rectagle690.png);
         background-repeat: no-repeat;
     }
+
+    @media (max-width: 576px) {
+        background: url(/collection/Rectagle576.png);
+        background-repeat: no-repeat;
+    }
 }
 
 .collection_container {
@@ -422,6 +428,10 @@ hr {
 
     @media (max-width: 768px) {
         height: 502px;
+    }
+
+    @media (max-width: 576px) {
+        height: 410px;
     }
 }
 
@@ -459,6 +469,11 @@ hr {
         width: 450px;
         height: 60px;
     }
+    @media (max-width: 576px) {
+        width: 331px;
+        height: 50px;
+        top: 51px;
+    }
 }
 
 .collection__title_container h1 {
@@ -468,6 +483,10 @@ hr {
 
     @media (max-width: 768px) {
         font-size: 30px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 24px;
     }
 }
 
@@ -491,6 +510,14 @@ hr {
         height: 182px;
         top: 160px;
     }
+
+    @media (max-width: 576px) {
+        font-size: 16px;
+        top: 120px;
+        width: 510px;
+        line-height: 22.4px;
+        height: 170px;
+    }
 }
 
 .collection button {
@@ -507,6 +534,13 @@ hr {
         top: 372px;
         width: 210px;
         height: 60px;
+    }
+
+    @media (max-width: 576px) {
+        top: 310px;
+        width: 190px;
+        height: 50px;
+        font-size: 18px;
     }
 }
 

@@ -196,8 +196,14 @@ function App() {
                         <button className={styles.collection__btn}>Ознакомиться</button>
                     </div>
                 </div>
+                <div className={styles.team__block}>
+                    <div className={classNames(styles.team__container, styles._container)}>
+                        <img src="./team/img.png" alt="work" />
+                        <div className={styles.team__container_}></div>
+                    </div>
+                </div>
             </main>
-            <footer className={styles.footer}>Подвал</footer>
+            4<footer className={styles.footer}>Подвал</footer>
         </>
     );
 }
