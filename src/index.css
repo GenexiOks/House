@@ -39,11 +39,8 @@ h1,
 button,
 a {
     font-family: "Raleway";
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
     text-decoration: none;
-    letter-spacing: normal;
 }
 
 ul,

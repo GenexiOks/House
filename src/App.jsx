@@ -196,10 +196,23 @@ function App() {
                         <button className={styles.collection__btn}>Ознакомиться</button>
                     </div>
                 </div>
-                <div className={styles.team__block}>
-                    <div className={classNames(styles.team__container, styles._container)}>
-                        <img src="./team/img.png" alt="work" />
-                        <div className={styles.team__container_}></div>
+                <div className={styles.team}>
+                    <div className={classNames(styles.team__block, styles._container)}>
+                        <div className={styles.team__img}>
+                            <img src="./team/img.png" alt="work" />
+                        </div>
+                        <div className={styles.team___container}>
+                            <h1 className={styles.team__title}>Наша команда</h1>
+                            <p className={styles.team__info}>
+                                Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы
+                                вынуждены отталкиваться от того, что консультация с широким активом.
+                            </p>
+                            <div className={styles.team__avatar}>
+                                <img src="./team/1.png" alt="avatar1"></img>
+                                <img src="./team/2.png" alt="avatar2"></img>
+                                <img src="./team/3.png" alt="avatar3"></img>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
