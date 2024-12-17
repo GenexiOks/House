@@ -216,7 +216,9 @@ function App() {
                     </div>
                 </div>
             </main>
-            4<footer className={styles.footer}>Подвал</footer>
+            <footer className={styles.footer}>
+                <div className={styles}></div>
+            </footer>
         </>
     );
 }
