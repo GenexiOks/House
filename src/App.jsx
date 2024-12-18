@@ -217,7 +217,61 @@ function App() {
                 </div>
             </main>
             <footer className={styles.footer}>
-                <div className={styles}></div>
+                <div className={classNames(styles.footer_container, styles._container)}>
+                    <div className={classNames(styles.logo_container, styles.footer_logo)}>
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.5 0L19.9652 9.10444L26.9612 2.77806L24.1128 11.77L33.4186 10.2302L26.1609 16.2547L34.8219 19.9905L25.4593 21.1349L30.7256 28.9601L22.2306 24.861L22.4303 34.2911L17.5 26.25L12.5697 34.2911L12.7694 24.861L4.27438 28.9601L9.54072 21.1349L0.178125 19.9905L8.83906 16.2547L1.58144 10.2302L10.8872 11.77L8.03879 2.77806L15.0348 9.10444L17.5 0Z"
+                                fill="#598D66"
+                            />
+                        </svg>
+                        <p>Ink. House</p>
+                    </div>
+                    <div className={classNames(styles.footer_container__contact, styles.container_contact)}>
+                        <h1 className={styles.container_contact__number}>+7 (999) 543-54-54</h1>
+                        <p className={styles.container_contact__text}>Мастерская</p>
+                    </div>
+                    <nav className={styles.footer_container__nav}>
+                        <ul className={classNames(styles.footer_container__ul, styles.one_ul)}>
+                            <h1>Репродукции</h1>
+                            <li>
+                                <a href="#">Франция</a>
+                            </li>
+                            <li>
+                                <a href="#">Германия</a>
+                            </li>
+                            <li>
+                                <a href="#">Англия</a>
+                            </li>
+                        </ul>
+                        <ul className={classNames(styles.footer_container__ul, styles.second_ul)}>
+                            <h1>Новинки</h1>
+                            <li>
+                                <a href="#">2021</a>
+                            </li>
+                            <li>
+                                <a href="#">2020</a>
+                            </li>
+                        </ul>
+                        <ul className={classNames(styles.footer_container__ul, styles.three_ul)}>
+                            <h1>О нас</h1>
+                            <li>
+                                <a href="#">Художники</a>
+                            </li>
+                            <li>
+                                <a href="#">Менеджиры</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div className={styles.footer_container__social_container}>
+                        <div className={styles.footer_container__media}></div>
+                        <div className={styles.footer_container__reserved}>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
             </footer>
         </>
     );
