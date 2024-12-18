@@ -404,6 +404,10 @@ hr {
     color: white;
 }
 
+.btn_container .btn:focus-visible {
+    border: 2px solid #598d66;
+}
+
 /* ----------Collection------------------------------- */
 
 .collection {
@@ -768,6 +772,38 @@ hr {
     color: #86928b;
     font-size: 18px;
 }
+
+.footer_container__media {
+    width: 132px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container__social_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 132px;
+    height: 68px;
+    gap: 10px;
+    top: 23px;
+    right: 0;
+}
+
+.footer_container__reserved {
+    width: 132px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer_container__reserved > p {
+    color: rgba(134, 146, 139, 1);
+    font-size: 12px;
+}
+
 /* ----------SVG_Button------------------------------- */
 
 .btn_basket {
@@ -800,6 +836,24 @@ hr {
 
 .mobil__basket_btn {
     width: 24px;
+}
+
+.footer_media > a {
+    outline: none;
+}
+
+.footer_container__media > a:hover path {
+    fill: rgba(89, 141, 102, 1);
+}
+
+.footer_container__media > a:focus-visible,
+.footer_container__media > a:focus-visible path {
+    background-color: #d4e8d9;
+    fill: rgba(89, 141, 102, 1);
+}
+
+.footer_container__media > a:active path {
+    fill: rgba(55, 107, 68, 1);
 }
 
 /* --------Mobile UI 320px---------------------------- */
